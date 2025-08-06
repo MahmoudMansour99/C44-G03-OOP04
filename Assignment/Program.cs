@@ -59,22 +59,35 @@ namespace Assignment
 
             #region Part 02
 
-            #region 1-Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
+            #region 1-Define Class Duration To include Three Attributes Hours, Minutes and Seconds.                              2-Override All System. Object Members [To String(), Equals(),GetHashCode() ] .                                    3-Define All Required Constructors to Produce this output:
+            //Duration D01 = new Duration(1, 10, 15);
+            //Duration D02 = new Duration(1, 10, 15);
+            //Duration D03 = new Duration(1, 25, 55);
+
+            //Console.WriteLine($"D1 = {D01}");
+            //Console.WriteLine($"D2 = {D02}");
+            //Console.WriteLine($"D3 = {D03}");
+
+            //Console.WriteLine(D01.Equals(D02));  
+            //Console.WriteLine(D01.Equals(D03));
+            //Console.WriteLine(D02.Equals(D03));
+
+            //Console.WriteLine($"Hash of D01: {D01.GetHashCode()}");
+            //Console.WriteLine($"Hash of D02: {D02.GetHashCode()}");
+            //Console.WriteLine($"Hash of D03: {D03.GetHashCode()}");
+
             Duration D01 = new Duration(1, 10, 15);
-            Duration D02 = new Duration(1, 10, 15);
-            Duration D03 = new Duration(1, 25, 55);
+            Console.WriteLine(D01.ToString());
 
-            Console.WriteLine($"D1 = {D01}");
-            Console.WriteLine($"D2 = {D02}");
-            Console.WriteLine($"D3 = {D03}");
+            Duration D02 = new Duration(3600);
+            Console.WriteLine(D02.ToString());
 
-            Console.WriteLine(D01.Equals(D02));  
-            Console.WriteLine(D01.Equals(D03));
-            Console.WriteLine(D02.Equals(D03));
+            Duration D03 = new Duration(7800);
+            Console.WriteLine(D03.ToString());
 
-            Console.WriteLine($"Hash of D01: {D01.GetHashCode()}");
-            Console.WriteLine($"Hash of D02: {D02.GetHashCode()}");
-            Console.WriteLine($"Hash of D03: {D03.GetHashCode()}");
+            Duration D04 = new Duration(666);
+            Console.WriteLine(D04.ToString());
+
 
             #endregion
 
