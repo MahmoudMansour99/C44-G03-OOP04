@@ -61,6 +61,20 @@ namespace Demo.Overloading
                 Img = (C?.Img ?? 0)
             };
         }
+        public static bool operator >(Complex left, Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Img > right.Img;
+            else
+                return left.Real > right.Real;
+        }
+        public static bool operator <(Complex left, Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Img < right.Img;
+            else
+                return left.Real < right.Real;
+        }
         #endregion
     }
 }
