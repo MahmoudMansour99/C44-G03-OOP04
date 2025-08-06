@@ -56,10 +56,16 @@ namespace Demo
             //Console.WriteLine(C3--);
             Console.WriteLine("========================");
 
-            if(C1 > C2)
-                Console.WriteLine("C1 > C2");
-            else
-                Console.WriteLine("C1 < C2");
+            //if(C1 > C2)
+            //    Console.WriteLine("C1 > C2");
+            //else
+            //    Console.WriteLine("C1 < C2");
+
+            //int x = (int)C1;
+
+            //string x = C1;
+            string x = (string)C1;
+            Console.WriteLine(x);
             #endregion
         }
     }

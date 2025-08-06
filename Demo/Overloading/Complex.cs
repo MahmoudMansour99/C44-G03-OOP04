@@ -76,5 +76,17 @@ namespace Demo.Overloading
                 return left.Real < right.Real;
         }
         #endregion
+        #region Casting Operator Overloading
+        public static explicit operator int(Complex C)
+        {
+            return C?.Real ?? 0;
+        }
+
+        public static implicit operator string(Complex C)
+        {
+            //return $"{C.Real} + {C.Img}i";
+            return C?.ToString() ?? string.Empty;
+        }
+        #endregion
     }
 }
