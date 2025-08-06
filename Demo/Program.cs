@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using Demo.Overloading;
+
+namespace Demo
 {
     internal class Program
     {
@@ -30,6 +32,23 @@
 
             //Console.WriteLine(Result);
 
+            #endregion
+
+            #region Operators Overloading
+            Complex C1 = new Complex() { Real = 10, Img = 5 };
+
+            Console.WriteLine($"C1 = {C1}");
+
+            Complex C2 = new Complex() { Real = 6, Img = 2 };
+            Console.WriteLine($"C2 = {C2}");
+
+            //Complex C3 = default; // ! Null Fordiveness Operator
+
+            //Complex C3 = null + C2;
+            //Complex C3 = C1 + C2;
+            Complex C3 = C1 - C2;
+            Console.WriteLine("============");
+            Console.WriteLine($"C3 = {C3}");
             #endregion
         }
     }
