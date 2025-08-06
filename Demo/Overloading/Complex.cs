@@ -45,6 +45,22 @@ namespace Demo.Overloading
                 Img = (left?.Img ?? 0) - (right?.Img ?? 0),
             };
         }
+        public static Complex operator ++(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real??0) + 1,
+                Img = (C?.Img ?? 0)
+            };
+        }
+        public static Complex operator --(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Img = (C?.Img ?? 0)
+            };
+        }
         #endregion
     }
 }
