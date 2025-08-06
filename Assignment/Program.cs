@@ -76,18 +76,49 @@ namespace Assignment
             //Console.WriteLine($"Hash of D02: {D02.GetHashCode()}");
             //Console.WriteLine($"Hash of D03: {D03.GetHashCode()}");
 
-            Duration D01 = new Duration(1, 10, 15);
-            Console.WriteLine(D01.ToString());
+            //Duration D01 = new Duration(1, 10, 15);
+            //Duration D02 = new Duration(3600);
+            //Duration D03 = new Duration(7800);
+            //Duration D04 = new Duration(666);
 
-            Duration D02 = new Duration(3600);
-            Console.WriteLine(D02.ToString());
+            //Console.WriteLine(D01.ToString());
+            //Console.WriteLine(D02.ToString());
+            //Console.WriteLine(D03.ToString());
+            //Console.WriteLine(D04.ToString());
 
-            Duration D03 = new Duration(7800);
-            Console.WriteLine(D03.ToString());
+            Duration D1 = new Duration(4, 15, 25);
+            Duration D2 = new Duration(2, 0, 0);
+            Duration D3;
 
-            Duration D04 = new Duration(666);
-            Console.WriteLine(D04.ToString());
+            D3 = D1 + D2;
+            Console.WriteLine("D1 + D2 = " + D3);
 
+            D3 = D1 + 7800;
+            Console.WriteLine("D1 + 7800 = " + D3);
+
+            D3 = 666 + D3;
+            Console.WriteLine("666 + D3 = " + D3);
+
+            D3 = ++D1;
+            Console.WriteLine("++D1 = " + D3);
+
+            D3 = --D2;
+            Console.WriteLine("--D2 = " + D3);
+
+            D1 = D1 - D2;
+            Console.WriteLine("D1 - D2 = " + D1);
+
+            if (D1 > D2)
+                Console.WriteLine("D1 is greater than D2");
+
+            if (D1 <= D2)
+                Console.WriteLine("D1 is less than or equal to D2");
+
+            if (D1)
+                Console.WriteLine("D1 is not zero");
+
+            DateTime obj = (DateTime)D1;
+            Console.WriteLine("Converted to DateTime: " + obj);
 
             #endregion
 
