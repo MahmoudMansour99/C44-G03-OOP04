@@ -28,6 +28,21 @@ namespace Assignment
         {
             return $"{Hours}:{Minutes}:{Seconds}";
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Duration other)
+            {
+                return Hours == other.Hours &&
+                       Minutes == other.Minutes &&
+                       Seconds == other.Seconds;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Hours, Minutes, Seconds);
+        }
         #endregion
     }
 }
