@@ -1,4 +1,5 @@
-﻿using Assignment.Company;
+﻿using Assignment.Base_Class;
+using Assignment.Company;
 
 namespace Assignment
 {
@@ -40,12 +41,20 @@ namespace Assignment
             #endregion
 
             #region Quetsion A) Create a base class named Employee with method That Work as it prints "Employee is  working". b) Create a derived class named Manager that overrides the Work method to print "Manager is managing". 
-
+            //Employee employee = new Employee();
+            //Manager manager = new Manager();
+            //employee.Print();
+            //manager.Print();
             #endregion
-            Employee employee = new Employee();
-            Manager manager = new Manager();
-            employee.Print();
-            manager.Print();
+            #region Question 5)  a) Create a base class BaseClass with a virtual method DisplayMessage that prints  "Message from BaseClass". b) Create a derived class DerivedClass1 that overrides the DisplayMessage method using the override keyword. C) Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword.
+            BaseClass baseClass = new BaseClass();
+            DerivedClass1 derivedClass1 = new DerivedClass1();
+            DerivedClass2 derivedClass2 = new DerivedClass2();
+
+            baseClass.DisplayMessage();
+            derivedClass1.DisplayMessage();
+            derivedClass2.DisplayMessage();
+            #endregion
             #endregion
 
 
