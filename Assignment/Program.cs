@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using Assignment.Company;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -27,16 +29,23 @@
             #endregion
 
             #region Q3) Define a class Complex Number that represents a complex number with real and imaginary parts.
-            Complex C01 = new Complex(8, 9);
-            Complex C02 = new Complex(5, 7);
+            //Complex C01 = new Complex(8, 9);
+            //Complex C02 = new Complex(5, 7);
 
-            Complex Sum = C01 + C02;
-            Complex Sub = C01 - C02;
+            //Complex Sum = C01 + C02;
+            //Complex Sub = C01 - C02;
 
-            Console.WriteLine($"Sum of the Complex is {Sum.Real} + {Sum.Imag}i");
-            Console.WriteLine($"Sub of the Complex is {Sub.Real} - {Sub.Imag}i");
+            //Console.WriteLine($"Sum of the Complex is {Sum.Real} + {Sum.Imag}i");
+            //Console.WriteLine($"Sub of the Complex is {Sub.Real} - {Sub.Imag}i");
             #endregion
 
+            #region Quetsion A) Create a base class named Employee with method That Work as it prints "Employee is  working". b) Create a derived class named Manager that overrides the Work method to print "Manager is managing". 
+
+            #endregion
+            Employee employee = new Employee();
+            Manager manager = new Manager();
+            employee.Print();
+            manager.Print();
             #endregion
 
 
