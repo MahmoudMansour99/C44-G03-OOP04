@@ -35,26 +35,26 @@ namespace Demo
             #endregion
 
             #region Operators Overloading
-            Complex C1 = new Complex() { Real = 10, Img = 5 };
+            //Complex C1 = new Complex() { Real = 10, Img = 5 };
 
-            Console.WriteLine($"C1 = {C1}");
+            //Console.WriteLine($"C1 = {C1}");
 
-            Complex C2 = new Complex() { Real = 6, Img = 2 };
-            Console.WriteLine($"C2 = {C2}");
+            //Complex C2 = new Complex() { Real = 6, Img = 2 };
+            //Console.WriteLine($"C2 = {C2}");
 
-            //Complex C3 = default; // ! Null Fordiveness Operator
+            ////Complex C3 = default; // ! Null Fordiveness Operator
 
-            //Complex C3 = null + C2;
-            //Complex C3 = C1 + C2;
-            //Complex C3 = C1 - C2;
-            //Console.WriteLine("============");
-            //Console.WriteLine($"C3 = {C3}");
+            ////Complex C3 = null + C2;
+            ////Complex C3 = C1 + C2;
+            ////Complex C3 = C1 - C2;
+            ////Console.WriteLine("============");
+            ////Console.WriteLine($"C3 = {C3}");
 
-            //Console.WriteLine(C3++);
-            //Console.WriteLine(++C3);
-            //Console.WriteLine(--C3);
-            //Console.WriteLine(C3--);
-            Console.WriteLine("========================");
+            ////Console.WriteLine(C3++);
+            ////Console.WriteLine(++C3);
+            ////Console.WriteLine(--C3);
+            ////Console.WriteLine(C3--);
+            //Console.WriteLine("========================");
 
             //if(C1 > C2)
             //    Console.WriteLine("C1 > C2");
@@ -64,8 +64,25 @@ namespace Demo
             //int x = (int)C1;
 
             //string x = C1;
-            string x = (string)C1;
-            Console.WriteLine(x);
+            //string x = (string)C1;
+            //Console.WriteLine(x);
+
+            User userObj = new User()
+            {
+                Id = 10,
+                FullName = "Mahmoud Mansour",
+                Email = "mans@gmail.com",
+                Password = "P@ssw0rd",
+                SecurityStamp = Guid.NewGuid()
+            };
+
+            // Manual Mapping
+            UserViewModel userViewModel = (UserViewModel)userObj;
+
+            Console.WriteLine(userViewModel.Id);
+            Console.WriteLine(userViewModel.FirstName);
+            Console.WriteLine(userViewModel.LastName);
+            Console.WriteLine(userViewModel.Email);
             #endregion
         }
     }
