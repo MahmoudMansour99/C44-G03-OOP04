@@ -1,4 +1,5 @@
 ﻿using Demo.Overloading;
+using Demo.Overriding;
 
 namespace Demo
 {
@@ -67,22 +68,35 @@ namespace Demo
             //string x = (string)C1;
             //Console.WriteLine(x);
 
-            User userObj = new User()
-            {
-                Id = 10,
-                FullName = "Mahmoud Mansour",
-                Email = "mans@gmail.com",
-                Password = "P@ssw0rd",
-                SecurityStamp = Guid.NewGuid()
-            };
+            //User userObj = new User()
+            //{
+            //    Id = 10,
+            //    FullName = "Mahmoud Mansour",
+            //    Email = "mans@gmail.com",
+            //    Password = "P@ssw0rd",
+            //    SecurityStamp = Guid.NewGuid()
+            //};
 
-            // Manual Mapping
-            UserViewModel userViewModel = (UserViewModel)userObj;
+            //// Manual Mapping
+            //UserViewModel userViewModel = (UserViewModel)userObj;
 
-            Console.WriteLine(userViewModel.Id);
-            Console.WriteLine(userViewModel.FirstName);
-            Console.WriteLine(userViewModel.LastName);
-            Console.WriteLine(userViewModel.Email);
+            //Console.WriteLine(userViewModel.Id);
+            //Console.WriteLine(userViewModel.FirstName);
+            //Console.WriteLine(userViewModel.LastName);
+            //Console.WriteLine(userViewModel.Email);
+            #endregion
+
+            #region Overriding
+            //TypeA typeA = new TypeA(1);
+            //typeA.A = 10;
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+            TypeB typeB = new TypeB(1, 2);
+            typeB.A = 10;
+            typeB.B = 20;
+            typeB.MyFun01();
+            typeB.MyFun02();
             #endregion
         }
     }
