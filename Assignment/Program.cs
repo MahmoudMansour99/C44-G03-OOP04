@@ -47,17 +47,24 @@ namespace Assignment
             //manager.Print();
             #endregion
             #region Question 5)  a) Create a base class BaseClass with a virtual method DisplayMessage that prints  "Message from BaseClass". b) Create a derived class DerivedClass1 that overrides the DisplayMessage method using the override keyword. C) Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword.
-            BaseClass baseClass = new BaseClass();
-            DerivedClass1 derivedClass1 = new DerivedClass1();
-            DerivedClass2 derivedClass2 = new DerivedClass2();
+            //BaseClass baseClass = new BaseClass();
+            //DerivedClass1 derivedClass1 = new DerivedClass1();
+            //DerivedClass2 derivedClass2 = new DerivedClass2();
 
-            baseClass.DisplayMessage();
-            derivedClass1.DisplayMessage();
-            derivedClass2.DisplayMessage();
+            //baseClass.DisplayMessage();
+            //derivedClass1.DisplayMessage();
+            //derivedClass2.DisplayMessage();
             #endregion
             #endregion
 
+            #region Part 02
 
+            #region 1-Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
+            Duration duration = new Duration(1, 10, 15);
+            Console.WriteLine(duration.ToString());
+            #endregion
+
+            #endregion
 
         }
     }
